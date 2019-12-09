@@ -1,0 +1,12 @@
+/* CSS for wide screens */
+@media only screen and (min-width: 800px) {
+	.gridContainer {
+		justify-items: center;
+		display: grid;
+		width: 100%;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-auto-rows: auto;
+		margin: 0px;
+		padding: 0px;
+	}
+}

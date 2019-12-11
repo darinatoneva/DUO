@@ -3,7 +3,9 @@
 	box-sizing: border-box;
 }
 
-
+body {
+	width: 100%;
+}
 
 @media only screen and (min-width: 800px) {
 	.gridContainer {
@@ -23,7 +25,11 @@
 
 	}
 
-	.SoMe_icons {}
+	footer {
+		position: static;
+		background-color: gray;
+		height: 200px;
+	}
 
 
 }

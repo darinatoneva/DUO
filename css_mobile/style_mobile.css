@@ -1,14 +1,18 @@
 /* CSS for mobile */
+* {
+	box-sizing: border-box;
+}
+
 @media only screen and (max-width: 800px) {
 
 	/*HOME PAGE - index.html*/
 	.gridContainer {
-		justify-items: center;
 		display: grid;
-		width: 100%;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
 		grid-auto-rows: auto;
-		margin: 0px;
-		padding: 0px;
+	}
+
+	div {
+		border: 1px solid black;
 	}
 }

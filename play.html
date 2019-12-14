@@ -14,13 +14,15 @@
 	<div class="gridContainer">
 		<h1>PLAY</h1>
 		<header>
+			<!--LOGO-->
 			<img class="logo" src="res/image.png" alt="Logo Danmarks Underholdningsorkester">
-
+			<!--SoMe ICONS-->
 			<div class="SoMe_icons">
 				<img class="fb" src="res/fb.png" alt="Facebook icon">
 				<img class="insta" src="res/insta.png" alt="Instagram icon">
 				<img class="youtube" src="res/youtube.png" alt="Youtube icon">
 			</div>
+			<!--NAVIGATION-->
 			<nav>
 				<ul>
 					<li><a href="index.html">home</a></li>
@@ -32,25 +34,15 @@
 				</ul>
 			</nav>
 		</header>
-		<section class="play_section">
-			<div class="playTextField">
-				<h1>Play</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lorem mi, finibus eu enim ut, mollis rutrum nisi. Nam in nisl maximus, porta magna vel, maximus elit. Duis molestie, diam dignissim imperdiet ornare, risus odio dapibus tortor, eget pharetra ligula est ac diam. Proin vitae lectus lacus. Maecenas eget feugiat erat. Curabitur scelerisque scelerisque gravida. Aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lorem mi, finibus eu enim ut, mollis rutrum nisi. Nam in nisl maximus, porta magna vel, maximus elit. Duis molestie, diam dignissim imperdiet ornare, risus odio dapibus tortor, eget pharetra ligula est ac diam. Proin vitae lectus lacus. Maecenas eget feugiat erat. Curabitur scelerisque scelerisque gravida. Aliquam erat volutpat.</p>
-			</div>
-			<div class="playSectionVideo">
-				<iframe class="video" width="300" height="200" src="https://www.youtube.com/embed/c4ICkK9b044" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<!--TANTE MUSIKA SECTION-->
 
-			</div>
-		</section>
-		<section class="tanteMusika_section">
+		<section>
 			<div class="tanteMusikaTextField">
+
 				<h1>Tante Musika</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lorem mi, finibus eu enim ut, mollis rutrum nisi. Nam in nisl maximus, porta magna vel, maximus elit. Duis molestie, diam dignissim imperdiet ornare, risus odio dapibus tortor, eget pharetra ligula est ac diam. Proin vitae lectus lacus. Maecenas eget feugiat erat. Curabitur scelerisque scelerisque gravida. Aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lorem mi, finibus eu enim ut, mollis rutrum nisi. Nam in nisl maximus, porta magna vel, maximus elit. Duis molestie, diam dignissim imperdiet ornare, risus odio dapibus tortor, eget pharetra ligula est ac diam. Proin vitae lectus lacus. Maecenas eget feugiat erat. Curabitur scelerisque scelerisque gravida. Aliquam erat volutpat.</p>
 			</div>
-			<div class="tanteMusikaVideo">
-				<iframe class="video" width="300" height="200" src="https://www.youtube.com/embed/c4ICkK9b044" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-			</div>
+			<!--MUSICIANS SECTION-->
 		</section>
 		<section class="musicians_section">
 			<h1>Meet a musician</h1>
@@ -61,7 +53,6 @@
 				</div>
 				<div class="musicianVideo">
 					<iframe class="video" width="300" height="200" src="https://www.youtube.com/embed/c4ICkK9b044" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 				</div>
 			</div>
 			<div class="musicianTwo">
@@ -83,64 +74,74 @@
 				</div>
 			</div>
 		</section>
-		<section class="playAsound_game">
-			<img src="res/image.png" alt="">
-			<button class="play_button"><a href="">PLAY</a></button>
-			<img src="res/image.png" alt="">
-			<button class="play_button"><a href="">PLAY</a></button>
-			<img src="res/image.png" alt="">
-			<button class="play_button"><a href="">PLAY</a></button>
-			<img src="res/image.png" alt="">
-			<button class="play_button"><a href="">PLAY</a></button>
-			<img src="res/image.png" alt="">
-			<button class="play_button"><a href="">PLAY</a></button>
-			<img src="res/image.png" alt="">
-			<button class="play_button"><a href="">PLAY</a></button>
+		<!--GAME with JavaScript
+Don't change anything of this section code-->
 
+		<section class="playSound_game">
+			<h2>Click on the buttons or press the number keys on your keyboard to hear how the instrument sounds</h2>
+			<div id="frame">
+				<div class="row">
+					<img src="res/image.png" alt="" width="150px">
+					<input type="button" id="d1" class="input_button drum_button" value="1">
+					<img src="res/image.png" alt="" width="150px">
+					<input type="button" id="d2" class="input_button drum_button" value="2">
+					<img src="res/image.png" alt="" width="150px">
+					<input type="button" id="d3" class="input_button drum_button" value="3">
+				</div>
+				<div class="row">
+					<img src="res/image.png" alt="" width="150px">
+					<input type="button" id="d4" class="input_button drum_button" value="4">
+					<img src="res/image.png" alt="" width="150px">
+					<input type="button" id="d5" class="input_button drum_button" value="5">
+					<img src="res/image.png" alt="" width="150px">
+					<input type="button" id="d6" class="input_button drum_button" value="6">
+				</div>
+			</div>
 		</section>
+		<!--FOOTER-->
+		<footer>
+			<ul class="footer_left">
+				<li><a href="about_us.html">ABOUT&nbsp;US</a></li>
+				<li><a href="">BUYING INSTRUMENTS</a></li>
+				<li><a href="">FAQ</a></li>
+				<li><a href="news.html">NEWS</a></li>
+				<li><a href="">EVENTS</a></li>
+				<li><a href="play.html">PLAY</a></li>
+				<li><a href="play.html">TANTE MUSIKA</a></li>
+			</ul>
+
+			<ul class="footer_right">
+
+				<li><a href="about_us.html">MEET A MUSICIAN</a></li>
+				<li><a href="">AUDIO CLIPS OF INSTRUMENTS</a></li>
+				<li><a href="teaching_material.html">TEACHING MATERIAL</a></li>
+				<li><a href="news.html">INSPIRATION</a></li>
+				<li><a href="">CHECKLIST</a></li>
+				<li><a href="play.html">WORKSHOP VIDEOS</a></li>
+			</ul>
+			<div>
+				<h5>ADRESSE</h5>
+				<p>Danmarks Underholdningsorkester
+					Lydens Hus
+					Gammel Kongevej 11. 4.
+					København V.
+					CVR-NR: 36539712</p>
+			</div>
+			<div>
+				<h5>KONTAKT</h5>
+				<p>Spørgsmål vedr. billetter osv.
+					info@underholdningsorkester.dk
+
+					Venneforening
+					venneforening@underholdningsorkester.dk</p>
+			</div>
+			<div>
+				<h5>TILMELD NYHEDSBREV</h5>
+				<p>Få seneste nyt fra Danmarks Underholdningsorkester, direkte i din indbakke.</p>
+				<button class="button_sign_up"><a href="">SIGN UP</a></button>
+			</div>
+		</footer>
 	</div>
-	<footer>
-		<ul class="footer_left">
-			<li><a href="about_us.html">ABOUT&nbsp;US</a></li>
-			<li><a href="">BUYING INSTRUMENTS</a></li>
-			<li><a href="">FAQ</a></li>
-			<li><a href="news.html">NEWS</a></li>
-			<li><a href="">EVENTS</a></li>
-			<li><a href="play.html">PLAY</a></li>
-			<li><a href="play.html">TANTE MUSIKA</a></li>
-		</ul>
-
-		<ul class="footer_right">
-
-			<li><a href="about_us.html">MEET A MUSICIAN</a></li>
-			<li><a href="">AUDIO CLIPS OF INSTRUMENTS</a></li>
-			<li><a href="teaching_material.html">TEACHING MATERIAL</a></li>
-			<li><a href="news.html">INSPIRATION</a></li>
-			<li><a href="">CHECKLIST</a></li>
-			<li><a href="play.html">WORKSHOP VIDEOS</a></li>
-		</ul>
-		<div>
-			<h5>ADRESSE</h5>
-			<p>Danmarks Underholdningsorkester
-				Lydens Hus
-				Gammel Kongevej 11. 4.
-				København V.
-				CVR-NR: 36539712</p>
-		</div>
-		<div>
-			<h5>KONTAKT</h5>
-			<p>Spørgsmål vedr. billetter osv.
-				info@underholdningsorkester.dk
-
-				Venneforening
-				venneforening@underholdningsorkester.dk</p>
-		</div>
-		<div>
-			<h5>TILMELD NYHEDSBREV</h5>
-			<p>Få seneste nyt fra Danmarks Underholdningsorkester, direkte i din indbakke.</p>
-			<button class="button_sign_up"><a href="">SIGN UP</a></button>
-		</div>
-	</footer>
 	<script src="js/script.js"></script>
 </body>
 

@@ -34,5 +34,42 @@ body {
 		height: 200px;
 	}
 
+	/*SLIDER*/
+	.mySlides {
+		display: none;
+	}
+
+	.mySlider {
+		margin-top: 30px;
+		grid-column: 1/span 3;
+		width: 40%;
+		height: 370px;
+		border: 1px solid black;
+	}
+
+	.mySlides {
+		width: 60%;
+		margin: auto;
+		margin-top: 20px;
+	}
+
+	.buttonsArrow {
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.buttonsArrow button {
+		width: 40px;
+		height: 40px;
+		background-color: white;
+
+		font-size: 2em;
+		border: none;
+		color: black;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+
 
 }

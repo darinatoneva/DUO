@@ -25,20 +25,20 @@ body {
     margin: 0 auto;
     font-family: var(--primary-font);
     line-height: var(--line-height);
+    background: coral;
+}
+
+h2 {
+    line-height: 2rem;
+    padding: 0 0 1.5rem 0;
 }
 
 header {
     background: blue;
 }
 
-
-
 /* navigation styling*/
 .navbar {
-/*
-    display: flex;
-    flex-direction: row;
-*/
     overflow: hidden;
     font-family: var(--primary-font);
     text-transform: uppercase;
@@ -147,7 +147,16 @@ header {
     }
 
     .short_about_us {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        padding: 2rem;
         background: hotpink;
+    }
+
+    .short_about_us_text_field {
+        background: white;
+        padding: 2rem;
     }
 
     .discover {
@@ -161,6 +170,7 @@ header {
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 3rem;
         background-color: lawngreen;
+        padding: 2rem;
     }
 
     footer ul {

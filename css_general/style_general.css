@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
 
 /* Setup variables */
 :root {
@@ -7,7 +8,7 @@
     --secondary-color: black;
     --tertiary-color: #eee;
     --primary-font: 'Montserrat', sans-serif;
-    --secondary-font: 'Arial', sans-serif;
+    --secondary-font: 'Gloria Hallelujah', cursive;
     --line-height: 1.5rem;
 }
 
@@ -25,16 +26,13 @@ body {
     margin: 0 auto;
     font-family: var(--primary-font);
     line-height: var(--line-height);
-    background: coral;
+background: linear-gradient(rgba(0, 255, 0, 0.6), rgba(0, 0, 255, 0.5)), url(img/img_hjemme_projektet_1920x1284.jpg) center;
 }
 
 h2 {
     line-height: 2rem;
     padding: 0 0 1.5rem 0;
-}
-
-header {
-    background: blue;
+    font-family: var(--secondary-font);
 }
 
 /* navigation styling*/
@@ -46,12 +44,8 @@ header {
     height: 150px;
 }
 
-.navbar .logo {
-    position: absolute;
-    float: left;
+.logo {
     width: 250px;
-    left: 35px;
-    top: 45px;
 }
 
 .navbar-nav {
@@ -84,6 +78,8 @@ header {
     position: absolute;
     top: 35px;
     right: 5px;
+    display: none;
+    display: none;
 }
 
 .side-nav {
@@ -143,7 +139,6 @@ header {
 
     .main_content {
         grid-column: 2/12;
-        background: orange;
     }
 
     .short_about_us {
@@ -151,16 +146,11 @@ header {
         grid-template-columns: 1fr 1fr;
         grid-gap: 2rem;
         padding: 2rem;
-        background: hotpink;
     }
 
     .short_about_us_text_field {
         background: white;
         padding: 2rem;
-    }
-
-    .discover {
-        background: purple;
     }
 
     /* footer stlye */
@@ -169,7 +159,7 @@ header {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 3rem;
-        background-color: lawngreen;
+        background-color: grey;
         padding: 2rem;
     }
 
@@ -185,6 +175,8 @@ header {
 
     .discover h2 {
         grid-column: 1/-1;
+        text-align: center;
+        padding: 2rem;
     }
 
     .discover_bits {
@@ -193,9 +185,41 @@ header {
         grid-template-columns: 1fr 1fr 1fr;
         margin: 0 auto;
         grid-gap: 8rem;
-        padding: 2rem;
+        padding: 0 0 2rem 0;
         text-align: center;
     }
+
+    .testimonial {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+    }
+
+    blockquote {
+        font-style: oblique;
+        text-align: center;
+    }
+
+    .testimonial div {
+        grid-column: 1;
+        margin: auto;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .gallery h2 {
+        text-align: center;
+    }
+
+    .gallery_background {
+        grid-column: 1;
+        margin: auto;
+    }
+
+
 
     /*SLIDER*/
     .mySlides {

@@ -2,140 +2,168 @@
 <html lang="en">
 
 <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danmarks Underholdningsorkester</title>
+    <link rel="stylesheet" href="css_general/style_general.css">
+    <!--
+=======
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="ROBOTS" content="NOINDEX, FOLLOW">
 	<meta name="ROBOTS" content="INDEX, NOFOLLOW">
 	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
 	<title>Danmarks Underholdningsorkester</title>
+
 	<link rel="stylesheet" href="css_desktop/style_desktop.css">
 	<link rel="stylesheet" href="css_mobile/style_mobile.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+-->
 </head>
 
 <body>
-	<div class="gridContainer">
-		<h1>HOME</h1>
+    <div class="gridContainer">
+        <!--HEADER SECTION - LOGO & NAVIGATION-->
+        <header>
+            <!--SoMe icons-->
+            <!--
+            <div class="SoMe_icons">
+                <img class="fb" src="res/fb.png" alt="Facebook icon">
+                <img class="insta" src="res/insta.png" alt="Instagram icon">
+                <img class="youtube" src="res/youtube.png" alt="Youtube icon">
+            </div>
+-->
+            <nav class="navbar">
+                    <img class="logo" src="img/logo_face_and_text.svg" alt="duo logo">
+                <span class="open-slide">
+                    <a href="#" onclick="openSlideMenu()">
+                        <svg width="30" height="30">
+                            <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                            <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                            <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                        </svg>
+                    </a>
+                </span>
+                <ul class="navbar-nav">
+                    <li><a class="active" href="index.html">home</a></li>
+                    <li><a href="about_us.html">about&nbsp;us</a></li>
+                    <li><a href="news.html">news</a></li>
+                    <li><a href="play.html">play</a></li>
+                    <li><a href="teaching_material.html">teaching&nbsp;material</a></li>
+                    <li><a href="contacts.html">contact</a></li>
+                </ul>
+            </nav>
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a class="active" href="index.html">home</a>
+                <a href="about_us.html">about&nbsp;us</a>
+                <a href="news.html">news</a>
+                <a href="play.html">play</a>
+                <a href="teaching_material.html">teaching&nbsp;material</a>
+                <a href="contacts.html">contact</a>
+            </div>
+        </header>
 
-		<!--HEADER SECTION - LOGO & NAVIGATION-->
-		<header>
+        <section class="main_content">
 
-			<!--LOGO-->
-			<img class="logo" src="res/image.png" alt="Logo Danmarks Underholdningsorkester">
+            <!-- about us section -->
+            <section class="short_about_us">
 
-			<!--SoMe icons-->
-			<div class="SoMe_icons">
-				<img class="fb" src="res/fb.png" alt="Facebook icon">
-				<img class="insta" src="res/insta.png" alt="Instagram icon">
-				<img class="youtube" src="res/youtube.png" alt="Youtube icon">
-			</div>
+                <!-- about us text -->
+                <div class="short_about_us_text_field">
+                    <h2>For us at DUO music means everything.</h2>
+                    <p>We want the next generation to discover music... Something about the meaning of music education. Our vision as DUO is to... We love music and what we are doing and your kids will have a lot of fun and learn a lot.</p>
+                    <br>
+                    <a href="about_us.html">Learn more about our workshops and concerts.</a>
+                </div>
 
-			<!--NAVIGATION-->
-			<nav>
-				<ul>
-					<li><a href="index.html">home</a></li>
-					<li><a href="about_us.html">about&nbsp;us</a></li>
-					<li><a href="news.html">news</a></li>
-					<li><a href="play.html">play</a></li>
-					<li><a href="teaching_material.html">teaching&nbsp;material</a></li>
-					<li><a href="contacts.html">contact</a></li>
-				</ul>
-			</nav>
-		</header>
+                <!-- video -->
+                <div>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/c4ICkK9b044" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h6>Kid reporter Helena meets Danmarks Underholdningsorkester and Burhan G in Tivoli.</h6>
+                </div>
+            </section>
 
-		<!--SHORT TEXT ABOUT US SECTION-->
-		<section class="short_about_us">
+            <!-- discover music section-->
+            <section class="discover">
+                <h2>Discover music with the orchestra</h2>
+                <div class="discover_bits">
+                    <div>
+                        <img class="icons_homePage" src="res/image.png" alt="" width=100px>
+                        <h3>Concerts and events</h3>
+                    </div>
+                    <div>
+                        <img class="icons_homePage" src="res/image.png" alt="" width=100px>
+                        <h3>Workshops</h3>
+                    </div>
+                    <div>
+                        <img class="icons_homePage" src="res/image.png" alt="" width=100px>
+                        <h3>Workshops</h3>
+                    </div>
+                </div>
+            </section>
 
-			<!--ABOUT US TEXT FIELD-->
-			<div class="short_about_us_text_field">
-				<h1>For us as DUO music means everything.</h1>
-				<p>We want the next generation to discover music... Something about the meaning of music education. Our vision as DUO is to... We love music and what we are doing and your kids will have a lot of fun and learn a lot. </p>
-				<a href="about_us.html">Learn more about our workshops and concerts.</a>
+            <!-- testimonial -->
+            <section class="testimonial">
+                <div>
+                    <img class="icons_homePage" src="res/image.png" alt="" width=100px>
+                </div>
+                <blockquote>"Det var godt, at I gik så meget i dypden med de forskelllige instrumenter. I var gode til at finde referencer, som børnene kendte til. Det var rart med en workshop inden, så vi havde et fælles udgangspunkt til den store koncert. Vi er klar igen en anden gang" — Maj-Britt, teacher</blockquote>
+            </section>
 
-				<!--SMALL LOGO ON THE BOTTOM OF THE TEXT FIELD-->
-				<img class="logo" src="res/image.png" alt="Logo Danmarks Underholdningsorkester">
-			</div>
+            <!-- gallery section -->
+            <section class="gallery">
+                <h2>Our workshops and concerts</h2>
+                <div class="gallery_background">
+                    <img src="res/image.png" alt="">
+                </div>
+            </section>
+        </section>
 
-			<!--VIDEO-->
-			<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/c4ICkK9b044" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<h6>Kid reporter Helena meets Danmarks Underholdningsorkester and Burhan G in Tivoli.</h6>
-		</section>
+        <!--FOOTER-->
+        <footer>
+            <ul class="footer_left">
+                <li><a href="about_us.html">ABOUT&nbsp;US</a></li>
+                <li><a href="">BUYING INSTRUMENTS</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="">EVENTS</a></li>
+                <li><a href="play.html">PLAY</a></li>
+                <li><a href="play.html">TANTE MUSIKA</a></li>
+            </ul>
 
-		<!--Discover Music with the orchestra-->
-		<section class="discover">
-			<h2>Discover Music with the orchestra</h2>
-
-			<!--3 ICONS-->
-			<div>
-				<img class="icons_homePage" src="res/image.png" alt="" width=100px>
-				<h6>Concerts and events</h6>
-				<img class="icons_homePage" src="res/image.png" alt="" width=100px>
-				<h6>Workshops</h6>
-				<img class="icons_homePage" src="res/image.png" alt="" width=100px>
-				<h6>Workshops</h6>
-			</div>
-		</section>
-		<section class="testimonial">
-			<!--TESTIMONIAL-->
-			<div>
-				<img class="icons_homePage" src="res/image.png" alt="" width=100px>
-				<p>"Det var godt, at I gik så meget i dypden med de forskelllige instrumenter. I var gode til at finde referencer, som børnene kendte til. Det var rart med en workshop inden, så vi havde et fælles udgangspunkt til den store koncert. Vi er klar igen en anden gang :-) " Maj-Britt, teacher</p>
-			</div>
-		</section>
-		<!--GALLERY-->
-		<section class="gallery">
-			<h2>Our workshops and concerts</h2>
-
-			<div class="gallery_background">
-				<img src="res/image.png" alt="">
-
-			</div>
-		</section>
-	</div>
-	<!--FOOTER-->
-	<footer>
-		<ul class="footer_left">
-			<li><a href="about_us.html">ABOUT&nbsp;US</a></li>
-			<li><a href="">BUYING INSTRUMENTS</a></li>
-			<li><a href="">FAQ</a></li>
-			<li><a href="news.html">NEWS</a></li>
-			<li><a href="">EVENTS</a></li>
-			<li><a href="play.html">PLAY</a></li>
-			<li><a href="play.html">TANTE MUSIKA</a></li>
-		</ul>
-
-		<ul class="footer_right">
-
-			<li><a href="about_us.html">MEET A MUSICIAN</a></li>
-			<li><a href="">AUDIO CLIPS OF INSTRUMENTS</a></li>
-			<li><a href="teaching_material.html">TEACHING MATERIAL</a></li>
-			<li><a href="news.html">INSPIRATION</a></li>
-			<li><a href="">CHECKLIST</a></li>
-			<li><a href="play.html">WORKSHOP VIDEOS</a></li>
-		</ul>
-		<div>
-			<h5>ADRESSE</h5>
-			<p>Danmarks Underholdningsorkester
-				Lydens Hus
-				Gammel Kongevej 11. 4.
-				København V.
-				CVR-NR: 36539712</p>
-		</div>
-		<div>
-			<h5>KONTAKT</h5>
-			<p>Spørgsmål vedr. billetter osv.
-				info@underholdningsorkester.dk
-
-				Venneforening
-				venneforening@underholdningsorkester.dk</p>
-		</div>
-		<div>
-			<h5>TILMELD NYHEDSBREV</h5>
-			<p>Få seneste nyt fra Danmarks Underholdningsorkester, direkte i din indbakke.</p>
-			<button class="button_sign_up"><a href="">SIGN UP</a></button>
-		</div>
-	</footer>
-	<script src="js/script.js"></script>
+            <ul class="footer_right">
+                <li><a href="about_us.html">MEET A MUSICIAN</a></li>
+                <li><a href="">AUDIO CLIPS OF INSTRUMENTS</a></li>
+                <li><a href="teaching_material.html">TEACHING MATERIAL</a></li>
+                <li><a href="news.html">INSPIRATION</a></li>
+                <li><a href="">CHECKLIST</a></li>
+                <li><a href="play.html">WORKSHOP VIDEOS</a></li>
+            </ul>
+            <div>
+                <h5>ADRESSE</h5>
+                <p>Danmarks Underholdningsorkester
+                    Lydens Hus
+                    Gammel Kongevej 11. 4.
+                    København V.
+                    CVR-NR: 36539712</p>
+            </div>
+            <div>
+                <h5>KONTAKT</h5>
+                <p>Spørgsmål vedr. billetter osv.
+                    info@underholdningsorkester.dk
+                    Venneforening
+                    venneforening@underholdningsorkester.dk</p>
+            </div>
+            <div>
+                <h5>TILMELD NYHEDSBREV</h5>
+                <p>Få seneste nyt fra Danmarks Underholdningsorkester, direkte i din indbakke.</p>
+                <button class="button_sign_up"><a href="">SIGN UP</a></button>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

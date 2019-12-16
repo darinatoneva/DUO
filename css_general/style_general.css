@@ -37,6 +37,7 @@ h2 {
 
 /* navigation styling*/
 .navbar {
+    display: flex;
     overflow: hidden;
     font-family: var(--primary-font);
     text-transform: uppercase;
@@ -151,6 +152,8 @@ h2 {
     .short_about_us_text_field {
         background: white;
         padding: 2rem;
+        transform: rotate(-2deg);
+        box-shadow: 10px 10px 0px -1px var(--secondary-color);
     }
 
     /* footer stlye */
@@ -218,8 +221,6 @@ h2 {
         grid-column: 1;
         margin: auto;
     }
-
-
 
     /*SLIDER*/
     .mySlides {

@@ -42,9 +42,16 @@ body {
     background: linear-gradient(rgba(255, 0, 0, 0.6), rgba(0, 0, 255, 0.5));
 }
 
+h1 {
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    color: white;
+    margin: 2rem 0 0 0;
+}
+
 h2 {
-    line-height: 2rem;
-    padding: 0 0 1.5rem 0;
     font-family: var(--secondary-font);
     text-transform: uppercase;
     letter-spacing: 0.2rem;
@@ -261,10 +268,14 @@ a {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2rem;
+        margin: 2rem 0 0 0;
     }
 
-    #events h2 {
+    #events h1 {
         grid-column: 1/-1;
+        font-size: 1rem;
+        color: var(--link-color);
+        margin: auto;
     }
 
     .time_category {
@@ -314,7 +325,7 @@ a {
     }
 
     .tante_shouting {
-        width: 90%;
+        width: 100%;
         filter: drop-shadow(10px 10px 0px var(--tertiary-color));
     }
 
@@ -451,12 +462,20 @@ a {
     .workshop_videos {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 2rem;
+        grid-gap: 1rem 2rem;
+        margin: 2rem 0 0 0;
     }
 
     .workshop_videos h2 {
         grid-column: 1/-1;
         text-align: center;
+    }
+
+    .workshop_video_1 {
+        width: 100%;
+        height: 200px;
+        background: var(--img-gradient), url(../img/workshop_video_1.jpg) top;
+        margin: 1rem 0 0 0;
     }
 
     .workshop_videos .video {
@@ -467,7 +486,8 @@ a {
     .sample_presentations {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 2rem;
+        grid-gap: 1rem;
+        margin: 2rem 0 0 0;
     }
 
     .sample_presentations h2 {
@@ -491,6 +511,34 @@ a {
     .icons_presentation {
         width: 150px;
         filter: drop-shadow(10px 10px 0px var(--tertiary-color));
+    }
+
+    .inspiration {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        margin: 2rem 0 0 0;
+    }
+
+    .inspiration h2 {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    .checklist {
+         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        margin: 2rem 0 0 0;
+    }
+
+    .checklist h2 {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    .checklist_group {
+        text-align: center;
     }
 
     /* footer style */

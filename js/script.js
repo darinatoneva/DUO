@@ -14,7 +14,7 @@ var drum_sounds = new Array();
 var key_is_up = true;
 var i = 1;
 for (i = 1; i < 10; i++) {
-    drum_sounds[i] = new Audio("sounds/" + i + ".wav");
+    drum_sounds[i] = new Audio("sounds/" + i + ".mp3");
 }
 
 var drum_buttons = document.querySelectorAll(".drum_button");

@@ -12,7 +12,7 @@
     --secondary-font: 'Lilita One', cursive;
     --line-height: 1.5rem;
     --box-shadow: 10px 10px 0px -1px;
-    --filter-green: invert(48%) sepia(69%) saturate(376%) hue-rotate(6deg) brightness(128%) contrast(219%);
+    --filter-green: invert(48%) sepia(69%) saturate(126%) hue-rotate(6deg) brightness(128%) contrast(219%);
     --img-gradient: linear-gradient(rgba(255, 254, 244, 0.1), rgba(10, 239, 206, 0.8));
     --img-gradient-2: linear-gradient(rgba(255, 254, 244, 0.1), rgba(255, 111, 120, 0.8));
     --secondary-animation: fadein 2s ease-in-out 0.2s 1 normal forwards;

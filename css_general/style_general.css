@@ -11,6 +11,7 @@
     --secondary-font: 'Lilita One', cursive;
     --line-height: 1.5rem;
     --box-shadow: 10px 10px 0px -1px;
+    --filter-green: invert(48%) sepia(79%) saturate(2476%) hue-rotate(6deg) brightness(218%) contrast(119%);
 }
 
 /* General styling */
@@ -175,6 +176,23 @@ blockquote {
         padding: 2rem;
         transform: rotate(-2deg);
         box-shadow: var(--box-shadow) var(--tertiary-color);
+    }
+
+    .vector_note {
+        position: absolute;
+        right: 100px;
+        width: 40%;
+        z-index: -1;
+        filter: var(--filter-green);
+    }
+
+    .vector_triangle {
+        position: absolute;
+        right: 60vw;
+        top: 70vh;
+        width: 40%;
+        z-index: -2;
+        filter: var(--filter-green);
     }
 
     .discover {

@@ -4,9 +4,10 @@
 /* Setup variables */
 :root {
     --bg-color: white;
-    --primary-color: red;
+    --primary-color: #ff6f78;
     --secondary-color: black;
     --tertiary-color: #001174;
+    --link-color: #ff6f78;
     --primary-font: 'Montserrat', sans-serif;
     --secondary-font: 'Lilita One', cursive;
     --line-height: 1.5rem;
@@ -56,6 +57,11 @@ blockquote {
     text-align: center;
 }
 
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
 /* navigation styling*/
 .navbar {
     display: flex;
@@ -84,8 +90,6 @@ blockquote {
     width: 100%;
     margin: 0 2rem;
     padding: 0.1rem;
-    text-decoration: none;
-    color: white;
 }
 
 .navbar ul {

@@ -12,13 +12,15 @@
     --secondary-font: 'Lilita One', cursive;
     --line-height: 1.5rem;
     --box-shadow: 10px 10px 0px -1px;
-    --filter-green: invert(48%) sepia(79%) saturate(2476%) hue-rotate(6deg) brightness(218%) contrast(119%);
+    --filter-green: invert(48%) sepia(69%) saturate(376%) hue-rotate(6deg) brightness(128%) contrast(219%);
     --img-gradient: linear-gradient(rgba(255, 254, 244, 0.1), rgba(10, 239, 206, 0.8));
     --img-gradient-2: linear-gradient(rgba(255, 254, 244, 0.1), rgba(255, 111, 120, 0.8));
     --secondary-animation: fadein 2s ease-in-out 0.2s 1 normal forwards;
     --tertiary-animation: moveVector 5s ease-in-out 0.2s 1 normal forwards;
     --fourth-animation: moveVectorToo 5s ease-in-out 0.2s 1 normal forwards;
     --icon-pop-animation: iconPop 2s ease-in-out 1 normal forwards;
+    --slide-in-animation: slideIn 2s ease-in-out 1 normal forwards;
+    --slide-animation-straight: slideInStraight 2s ease-in-out 1 normal forwards;
 }
 
 /* General styling */
@@ -49,6 +51,7 @@ h1 {
     font-size: 3rem;
     color: white;
     margin: 2rem 0 0 0;
+    animation: var(--slide-in-animation);
 }
 
 h2 {
@@ -126,7 +129,7 @@ a {
 
 @keyframes moveVectorToo {
     0% {
-        transform: translateX(20%);
+        transform: translateX(40%);
         transform: translateY(50%);
         opacity: 0;
     }
@@ -150,6 +153,33 @@ a {
         opacity: 1;
     }
 }
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-15%);
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        transform: rotate(-3deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInStraight {
+    0% {
+        transform: translateX(-15%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
 
 
 
@@ -276,6 +306,11 @@ a {
         font-size: 1rem;
         color: var(--link-color);
         margin: auto;
+        animation: none;
+    }
+
+    .straight_h1 {
+        animation: var(--slide-animation-straight);
     }
 
     .time_category {
@@ -404,21 +439,18 @@ a {
         width: 100%;
         height: 300px;
         background: var(--img-gradient), url(../img/musician_helen_cello.jpg) top;
-        margin: 1rem 0 0 0;
     }
 
     .musician_img2 {
         width: 100%;
         height: 300px;
         background: var(--img-gradient), url(../img/musician_radi_oboe.jpg) top;
-        margin: 1rem 0 0 0;
     }
 
     .musician_img3 {
         width: 100%;
         height: 300px;
         background: var(--img-gradient), url(../img/musician_madara_violin.jpg) top;
-        margin: 1rem 0 0 0;
     }
 
     .musicians_section h2 {

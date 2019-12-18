@@ -194,13 +194,9 @@ a {
     height: 100px;
 }
 
-.logo_container {
-    display: flex;
-    align-items: center;
-}
-
 .logo {
-    width: 200px;
+    width: 100%;
+    margin: 2rem;
 }
 
 .navbar-nav {
@@ -271,15 +267,23 @@ a {
     margin-left: 50px;
 }
 
-
-
-
 @media only screen and (min-width: 800px) {
     .gridContainer {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-auto-rows: auto;
         grid-column-gap: 30px;
+    }
+
+    .SoMe_icons {
+        display: flex;
+        justify-content: flex-end;
+        padding: 2rem 1.4rem 0 0;
+    }
+
+    .SoMe_icons img {
+        padding: 0 0.6rem 0 0;
+        width: 40px;
     }
 
     .open-slide {
@@ -394,13 +398,16 @@ a {
         padding: 2rem;
     }
 
+    .discover h3 {
+        padding: 1rem;
+    }
+
     .discover_bits {
         grid-column: 1/-1;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin: 0 auto;
-        grid-gap: 8rem;
-        padding: 0 0 2rem 0;
+        grid-gap: 6rem;
         text-align: center;
     }
 
@@ -571,6 +578,18 @@ a {
 
     .checklist_group {
         text-align: center;
+    }
+
+    .contact_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        margin: 3rem;
+    }
+
+    .contact_group {
+        background: white;
+        padding: 2rem;
     }
 
     /* footer style */

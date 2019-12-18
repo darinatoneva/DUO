@@ -13,6 +13,7 @@
     --box-shadow: 10px 10px 0px -1px;
     --filter-green: invert(48%) sepia(79%) saturate(2476%) hue-rotate(6deg) brightness(218%) contrast(119%);
     --img-gradient: linear-gradient(rgba(255, 254, 244, 0.1), rgba(10, 239, 206, 0.8));
+    --img-gradient-2: linear-gradient(rgba(255, 254, 244, 0.1), rgba(255, 111, 120, 0.8));
 }
 
 /* General styling */
@@ -179,6 +180,12 @@ blockquote {
         box-shadow: var(--box-shadow) var(--tertiary-color);
     }
 
+    .all_musicians {
+        width: 100%;
+        height: auto;
+        background: var(--img-gradient-2), url(../img/musician_all.jpg) center;
+    }
+
     .icons_homePage {
         filter: drop-shadow(10px 10px 0px var(--tertiary-color));
     }
@@ -314,6 +321,35 @@ blockquote {
         width: 100%;
         margin: 0.5rem;
         box-shadow: var(--box-shadow) var(--tertiary-color);
+    }
+
+    .sample_presentations {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+    .sample_presentations h2 {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    .presentation_group {
+        text-align: center;
+    }
+
+    .presentation_group button {
+       border: 0px;
+        padding: 0.6rem;
+        border-radius: 2rem;
+        width: 100%;
+        margin: 0.5rem;
+        box-shadow: var(--box-shadow) var(--tertiary-color);
+    }
+
+    .icons_presentation {
+        width: 150px;
+        filter: drop-shadow(10px 10px 0px var(--tertiary-color));
     }
 
     /* footer style */

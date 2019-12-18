@@ -52,6 +52,18 @@ h3 {
     letter-spacing: 0.1rem;
 }
 
+h4 {
+    font-family: var(--secondary-font);
+    letter-spacing: 0.1rem;
+    color: white;
+}
+
+h5 {
+    font-family: var(--secondary-font);
+    letter-spacing: 0.1rem;
+    color: white;
+}
+
 blockquote {
     font-style: oblique;
     text-align: center;
@@ -60,6 +72,11 @@ blockquote {
 a {
     color: var(--link-color);
     text-decoration: none;
+}
+
+.active {
+    color: yellow;
+    text-decoration: line-through;
 }
 
 /* navigation styling*/

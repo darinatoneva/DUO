@@ -1,7 +1,7 @@
 // Mobile navigation
 function openSlideMenu() {
-    document.getElementById('side-menu').style.width = '250px';
-    document.getElementById('main_content').style.marginLeft = '250px';
+    document.getElementById('side-menu').style.width = '65vw';
+    document.getElementById('main_content').style.marginLeft = '65vw';
 }
 
 function closeSlideMenu() {

@@ -166,6 +166,36 @@ blockquote {
         grid-column: 2/12;
     }
 
+    #events {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+    #events h2 {
+        grid-column: 1/-1;
+    }
+
+    .time_category {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    hr {
+        border: 1px solid var(--tertiary-color);
+        margin: 0.4rem 0 0.6rem 0;
+    }
+
+    .singleNews {
+        background: white;
+        padding: 1.5rem;
+    }
+
+    .singleNews img {
+        width: 100%;
+        height: auto;
+    }
+
     .short_about_us {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -191,7 +221,7 @@ blockquote {
     }
 
     .tante_shouting {
-        width:90%;
+        width: 90%;
         filter: drop-shadow(10px 10px 0px var(--tertiary-color));
     }
 
@@ -258,7 +288,7 @@ blockquote {
         margin: auto;
     }
 
-     .musicians_section {
+    .musicians_section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2rem;
@@ -355,7 +385,7 @@ blockquote {
     }
 
     .presentation_group button {
-       border: 0px;
+        border: 0px;
         padding: 0.6rem;
         border-radius: 2rem;
         width: 100%;

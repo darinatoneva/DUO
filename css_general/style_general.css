@@ -10,6 +10,7 @@
     --primary-font: 'Montserrat', sans-serif;
     --secondary-font: 'Lilita One', cursive;
     --line-height: 1.5rem;
+    --box-shadow: 10px 10px 0px -1px;
 }
 
 /* General styling */
@@ -26,13 +27,30 @@ body {
     margin: 0 auto;
     font-family: var(--primary-font);
     line-height: var(--line-height);
-background: linear-gradient(rgba(0, 255, 0, 0.6), rgba(0, 0, 255, 0.5)), url(img/img_hjemme_projektet_1920x1284.jpg) center;
+    background: linear-gradient(rgba(0, 255, 0, 0.6), rgba(0, 0, 255, 0.5)), url(img/img_hjemme_projektet_1920x1284.jpg) center;
+}
+
+.body_play {
+    background: linear-gradient(rgba(255, 0, 0, 0.6), rgba(0, 0, 255, 0.5));
 }
 
 h2 {
     line-height: 2rem;
     padding: 0 0 1.5rem 0;
     font-family: var(--secondary-font);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+h3 {
+    padding: 0 0 1.5rem 0;
+    font-family: var(--secondary-font);
+    letter-spacing: 0.1rem;
+}
+
+blockquote {
+    font-style: oblique;
+    text-align: center;
 }
 
 /* navigation styling*/
@@ -129,8 +147,6 @@ h2 {
 
 
 
-
-
 @media only screen and (min-width: 800px) {
     .gridContainer {
         display: grid;
@@ -161,21 +177,6 @@ h2 {
         box-shadow: 10px 10px 0px -1px var(--secondary-color);
     }
 
-    /* footer stlye */
-    footer {
-        grid-column: 1/-1;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 3rem;
-        background-color: grey;
-        padding: 2rem;
-    }
-
-    footer ul {
-        list-style: none;
-        text-decoration: none;
-    }
-
     .discover {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -203,11 +204,6 @@ h2 {
         padding: 2rem;
     }
 
-    blockquote {
-        font-style: oblique;
-        text-align: center;
-    }
-
     .testimonial div {
         grid-column: 1;
         margin: auto;
@@ -225,6 +221,65 @@ h2 {
     .gallery_background {
         grid-column: 1;
         margin: auto;
+    }
+
+     .musicians_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+    .musicians_section h2 {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    .playSound_game {
+        margin: 0 auto;
+        grid-row: 3;
+        grid-column: 1/-1;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .playSound_game h2 {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    #frame {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+    .one_instrument {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .drum_button {
+        border: 0px solid black;
+        padding: 0.6rem;
+        border-radius: 2rem;
+        margin: 0.5rem;
+        box-shadow: var(--box-shadow) var(--secondary-color);
+    }
+
+
+
+    /* footer style */
+    footer {
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 3rem;
+        background-color: grey;
+        padding: 2rem;
+    }
+
+    footer ul {
+        list-style: none;
+        text-decoration: none;
     }
 
     /*SLIDER*/

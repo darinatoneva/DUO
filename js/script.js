@@ -10,7 +10,6 @@ function closeSlideMenu() {
 }
 
 //GAME
-
 var drum_sounds = new Array();
 var key_is_up = true;
 var i = 1;
@@ -50,7 +49,6 @@ document.addEventListener("keydown", function (event) {
     else if (key_code > 48 && key_code < 58) {
         offset = 48;
     }
-
 
     if (offset > 0 && key_is_up) {
         var button_number = event.keyCode - offset;

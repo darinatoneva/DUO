@@ -2,154 +2,184 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="ROBOTS" content="NOINDEX, FOLLOW">
-	<meta name="ROBOTS" content="INDEX, NOFOLLOW">
-	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
-	<title>Danmarks Underholdningsorkester</title>
-	<link rel="stylesheet" href="css_desktop/style_desktop.css">
-	<link rel="stylesheet" href="css_mobile/style_mobile.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_general/style_general.css">
+    <meta name="ROBOTS" content="NOINDEX, FOLLOW">
+    <meta name="ROBOTS" content="INDEX, NOFOLLOW">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <title>Danmarks Underholdningsorkester</title>
 </head>
 
-<body>
-	<div class="gridContainer">
-		<h1>PLAY</h1>
-		<header>
-			<!--LOGO-->
-			<img class="logo" src="res/image.png" alt="Logo Danmarks Underholdningsorkester">
-			<!--SoMe ICONS-->
-			<div class="SoMe_icons">
-				<img class="fb" src="res/fb.png" alt="Facebook icon">
-				<img class="insta" src="res/insta.png" alt="Instagram icon">
-				<img class="youtube" src="res/youtube.png" alt="Youtube icon">
-			</div>
-			<!--NAVIGATION-->
-			<nav>
-				<ul>
-					<li><a href="index.html">home</a></li>
-					<li><a href="about_us.html">about&nbsp;us</a></li>
-					<li><a href="news.html">news</a></li>
-					<li><a href="play.html">play</a></li>
-					<li><a href="teaching_material.html">teaching&nbsp;material</a></li>
-					<li><a href="contacts.html">contact</a></li>
-				</ul>
-			</nav>
-		</header>
-		<!--TANTE MUSIKA SECTION-->
+<body class="body_play">
+    <div class="gridContainer">
+        <header>
+            <!--SoMe icons-->
+            <!--
+            <div class="SoMe_icons">
+                <img class="fb" src="res/fb.png" alt="Facebook icon">
+                <img class="insta" src="res/insta.png" alt="Instagram icon">
+                <img class="youtube" src="res/youtube.png" alt="Youtube icon">
+            </div>
+-->
+            <nav class="navbar">
+                <div class="logo_container">
+                    <img class="logo" src="img/logo_face_and_text.svg" alt="duo logo">
+                </div>
+                <span class="open-slide">
+                    <a href="#" onclick="openSlideMenu()">
+                        <svg width="30" height="30">
+                            <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                            <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                            <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                        </svg>
+                    </a>
+                </span>
+                <ul class="navbar-nav">
+                    <li><a class="active" href="index.html">home</a></li>
+                    <li><a href="about_us.html">about&nbsp;us</a></li>
+                    <li><a href="news.html">news</a></li>
+                    <li><a href="play.html">play</a></li>
+                    <li><a href="teaching_material.html">teaching&nbsp;material</a></li>
+                    <li><a href="contacts.html">contact</a></li>
+                </ul>
+            </nav>
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a class="active" href="index.html">home</a>
+                <a href="about_us.html">about&nbsp;us</a>
+                <a href="news.html">news</a>
+                <a href="play.html">play</a>
+                <a href="teaching_material.html">teaching&nbsp;material</a>
+                <a href="contacts.html">contact</a>
+            </div>
+        </header>
 
-		<section>
-			<div class="tanteMusikaTextField">
+        <section class="main_content">
 
-				<h1>Tante Musika</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lorem mi, finibus eu enim ut, mollis rutrum nisi. Nam in nisl maximus, porta magna vel, maximus elit. Duis molestie, diam dignissim imperdiet ornare, risus odio dapibus tortor, eget pharetra ligula est ac diam. Proin vitae lectus lacus. Maecenas eget feugiat erat. Curabitur scelerisque scelerisque gravida. Aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lorem mi, finibus eu enim ut, mollis rutrum nisi. Nam in nisl maximus, porta magna vel, maximus elit. Duis molestie, diam dignissim imperdiet ornare, risus odio dapibus tortor, eget pharetra ligula est ac diam. Proin vitae lectus lacus. Maecenas eget feugiat erat. Curabitur scelerisque scelerisque gravida. Aliquam erat volutpat.</p>
-			</div>
-			<div class="tanteMusika_video">
-				<iframe class="video" width="300" height="200" src="https://www.youtube.com/embed/c4ICkK9b044" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-		</section>
-		<!--MUSICIANS SECTION-->
-		<section class="musicians_section">
-			<h1>Meet a musician</h1>
-			<div class="musicianOne">
-				<div class="musicianTextField">
-					<h1>Musician's Name</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lorem mi, finibus eu enim ut, mollis rutrum nisi. Nam in nisl maximus, porta magna vel, maximus elit. Duis molestie, diam dignissim imperdiet ornare, risus odio dapibus tortor, eget pharetra ligula est ac diam. Proin vitae lectus lacus.</p>
-				</div>
-				<div class="musicianVideo">
-					<iframe class="video" width="300" height="200" src="https://www.youtube.com/embed/c4ICkK9b044" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-			<div class="musicianTwo">
-				<div class="musicianTextField">
-					<h1>Musician's Name</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lorem mi, finibus eu enim ut, mollis rutrum nisi. Nam in nisl maximus, porta magna vel, maximus elit. Duis molestie, diam dignissim imperdiet ornare, risus odio dapibus tortor, eget pharetra ligula est ac diam. Proin vitae lectus lacus.</p>
-				</div>
-				<div class="musicianVideo">
-					<iframe class="video" width="300" height="200" src="https://www.youtube.com/embed/c4ICkK9b044" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-			<div class="musicianThree">
-				<div class="musicianTextField">
-					<h1>Musician's Name</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lorem mi, finibus eu enim ut, mollis rutrum nisi. Nam in nisl maximus, porta magna vel, maximus elit. Duis molestie, diam dignissim imperdiet ornare, risus odio dapibus tortor, eget pharetra ligula est ac diam. Proin vitae lectus lacus.</p>
-				</div>
-				<div class="musicianVideo">
-					<iframe class="video" width="300" height="200" src="https://www.youtube.com/embed/c4ICkK9b044" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</section>
-		<!--GAME with JavaScript
+            <!--TANTE MUSIKA SECTION-->
+            <section class="short_about_us">
+                <div class="short_about_us_text_field">
+                    <h2>Tante Musika</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lorem mi, finibus eu enim ut, mollis rutrum nisi. Nam in nisl maximus, porta magna vel, maximus elit. Duis molestie, diam dignissim imperdiet ornare, risus odio dapibus tortor, eget pharetra ligula est ac diam. Proin vitae lectus lacus. Maecenas eget feugiat erat. Curabitur scelerisque scelerisque gravida. Aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lorem mi, finibus eu enim ut, mollis rutrum nisi. Nam in nisl maximus, porta magna vel, maximus elit. Duis molestie, diam dignissim imperdiet ornare, risus odio dapibus tortor, eget pharetra ligula est ac diam. Proin vitae lectus lacus. Maecenas eget feugiat erat. Curabitur scelerisque scelerisque gravida. Aliquam erat volutpat.</p>
+                </div>
+                <div class="tanteMusika_video">
+                    <iframe class="video" width="300" height="200" src="https://www.youtube.com/embed/c4ICkK9b044" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <!--MUSICIANS SECTION-->
+
+            <section class="musicians_section">
+                <h2>Meet a musician</h2>
+                <div class="musicianOne">
+                    <div class="musicianTextField">
+                        <h3>Musician's Name</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lorem mi, finibus eu enim ut, mollis rutrum nisi. Nam in nisl maximus, porta magna vel, maximus elit. Duis molestie, diam dignissim imperdiet ornare, risus odio dapibus tortor, eget pharetra ligula est ac diam. Proin vitae lectus lacus.</p>
+                    </div>
+                    <div class="musicianVideo">
+                        <iframe class="video" width="300" height="200" src="https://www.youtube.com/embed/c4ICkK9b044" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="musicianTwo">
+                    <div class="musicianTextField">
+                        <h3>Musician's Name</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lorem mi, finibus eu enim ut, mollis rutrum nisi. Nam in nisl maximus, porta magna vel, maximus elit. Duis molestie, diam dignissim imperdiet ornare, risus odio dapibus tortor, eget pharetra ligula est ac diam. Proin vitae lectus lacus.</p>
+                    </div>
+                    <div class="musicianVideo">
+                        <iframe class="video" width="300" height="200" src="https://www.youtube.com/embed/c4ICkK9b044" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="musicianThree">
+                    <div class="musicianTextField">
+                        <h3>Musician's Name</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lorem mi, finibus eu enim ut, mollis rutrum nisi. Nam in nisl maximus, porta magna vel, maximus elit. Duis molestie, diam dignissim imperdiet ornare, risus odio dapibus tortor, eget pharetra ligula est ac diam. Proin vitae lectus lacus.</p>
+                    </div>
+                    <div class="musicianVideo">
+                        <iframe class="video" width="300" height="200" src="https://www.youtube.com/embed/c4ICkK9b044" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!--GAME with JavaScript
 Don't change anything in this section-->
+        <section class="playSound_game">
+            <h2>Instrument Game</h2>
+            <h3>Press a number on your keyboard to hear each instrument</h3>
+            <div id="frame">
+                <div class="one_instrument">
+                    <img src="img/cello.png" alt="" width="150px">
+                    <input type="button" id="d1" class="input_button drum_button" value="1">
+                </div>
+                <div class="one_instrument">
+                    <img src="img/drums.png" alt="" width="150px">
+                    <input type="button" id="d2" class="input_button drum_button" value="2">
+                </div>
+                <div class="one_instrument">
+                    <img src="img/oboe.png" alt="" width="150px">
+                    <input type="button" id="d3" class="input_button drum_button" value="3">
+                </div>
+                <div class="one_instrument">
+                    <img src="img/piano.png" alt="" width="150px">
+                    <input type="button" id="d4" class="input_button drum_button" value="4">
+                </div>
+                <div class="one_instrument">
+                    <img src="img/saxophone.png" alt="" width="150px">
+                    <input type="button" id="d5" class="input_button drum_button" value="5">
+                </div>
+                <div class="one_instrument">
+                    <img src="img/trumpet.png" alt="" width="150px">
+                    <input type="button" id="d6" class="input_button drum_button" value="6">
+                </div>
+            </div>
+        </section>
+    </div>
 
-		<section class="playSound_game">
-			<h2>Click on the buttons or press the number keys on your keyboard to hear how the instrument sounds</h2>
-			<div id="frame">
-				<div class="row">
-					<img src="res/image.png" alt="" width="150px">
-					<input type="button" id="d1" class="input_button drum_button" value="1">
-					<img src="res/image.png" alt="" width="150px">
-					<input type="button" id="d2" class="input_button drum_button" value="2">
-					<img src="res/image.png" alt="" width="150px">
-					<input type="button" id="d3" class="input_button drum_button" value="3">
-				</div>
-				<div class="row">
-					<img src="res/image.png" alt="" width="150px">
-					<input type="button" id="d4" class="input_button drum_button" value="4">
-					<img src="res/image.png" alt="" width="150px">
-					<input type="button" id="d5" class="input_button drum_button" value="5">
-					<img src="res/image.png" alt="" width="150px">
-					<input type="button" id="d6" class="input_button drum_button" value="6">
-				</div>
-			</div>
-		</section>
-	</div>
-	<!--FOOTER-->
-	<footer>
-		<ul class="footer_left">
-			<li><a href="about_us.html">ABOUT&nbsp;US</a></li>
-			<li><a href="">BUYING INSTRUMENTS</a></li>
-			<li><a href="">FAQ</a></li>
-			<li><a href="news.html">NEWS</a></li>
-			<li><a href="">EVENTS</a></li>
-			<li><a href="play.html">PLAY</a></li>
-			<li><a href="play.html">TANTE MUSIKA</a></li>
-		</ul>
+    <!--FOOTER-->
+    <footer>
+        <ul class="footer_left">
+            <li><a href="about_us.html">ABOUT&nbsp;US</a></li>
+            <li><a href="">BUYING INSTRUMENTS</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="">EVENTS</a></li>
+            <li><a href="play.html">PLAY</a></li>
+            <li><a href="play.html">TANTE MUSIKA</a></li>
+        </ul>
 
-		<ul class="footer_right">
+        <ul class="footer_right">
 
-			<li><a href="about_us.html">MEET A MUSICIAN</a></li>
-			<li><a href="">AUDIO CLIPS OF INSTRUMENTS</a></li>
-			<li><a href="teaching_material.html">TEACHING MATERIAL</a></li>
-			<li><a href="news.html">INSPIRATION</a></li>
-			<li><a href="">CHECKLIST</a></li>
-			<li><a href="play.html">WORKSHOP VIDEOS</a></li>
-		</ul>
-		<div>
-			<h5>ADRESSE</h5>
-			<p>Danmarks Underholdningsorkester
-				Lydens Hus
-				Gammel Kongevej 11. 4.
-				København V.
-				CVR-NR: 36539712</p>
-		</div>
-		<div>
-			<h5>KONTAKT</h5>
-			<p>Spørgsmål vedr. billetter osv.
-				info@underholdningsorkester.dk
+            <li><a href="about_us.html">MEET A MUSICIAN</a></li>
+            <li><a href="">AUDIO CLIPS OF INSTRUMENTS</a></li>
+            <li><a href="teaching_material.html">TEACHING MATERIAL</a></li>
+            <li><a href="news.html">INSPIRATION</a></li>
+            <li><a href="">CHECKLIST</a></li>
+            <li><a href="play.html">WORKSHOP VIDEOS</a></li>
+        </ul>
+        <div>
+            <h5>ADRESSE</h5>
+            <p>Danmarks Underholdningsorkester
+                Lydens Hus
+                Gammel Kongevej 11. 4.
+                København V.
+                CVR-NR: 36539712</p>
+        </div>
+        <div>
+            <h5>KONTAKT</h5>
+            <p>Spørgsmål vedr. billetter osv.
+                info@underholdningsorkester.dk
+                Venneforening
+                venneforening@underholdningsorkester.dk</p>
+        </div>
+        <div>
+            <h5>TILMELD NYHEDSBREV</h5>
+            <p>Få seneste nyt fra Danmarks Underholdningsorkester, direkte i din indbakke.</p>
+            <button class="button_sign_up"><a href="">SIGN UP</a></button>
+        </div>
+    </footer>
 
-				Venneforening
-				venneforening@underholdningsorkester.dk</p>
-		</div>
-		<div>
-			<h5>TILMELD NYHEDSBREV</h5>
-			<p>Få seneste nyt fra Danmarks Underholdningsorkester, direkte i din indbakke.</p>
-			<button class="button_sign_up"><a href="">SIGN UP</a></button>
-		</div>
-	</footer>
-
-	<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

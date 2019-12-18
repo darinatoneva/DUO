@@ -6,7 +6,7 @@
     --bg-color: white;
     --primary-color: red;
     --secondary-color: black;
-    --tertiary-color: #eee;
+    --tertiary-color: #001174;
     --primary-font: 'Montserrat', sans-serif;
     --secondary-font: 'Lilita One', cursive;
     --line-height: 1.5rem;
@@ -174,7 +174,7 @@ blockquote {
         background: white;
         padding: 2rem;
         transform: rotate(-2deg);
-        box-shadow: 10px 10px 0px -1px var(--secondary-color);
+        box-shadow: var(--box-shadow) var(--tertiary-color);
     }
 
     .discover {
@@ -255,17 +255,17 @@ blockquote {
     .one_instrument {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .drum_button {
-        border: 0px solid black;
+        border: 0px;
         padding: 0.6rem;
         border-radius: 2rem;
+        width: 100%;
         margin: 0.5rem;
-        box-shadow: var(--box-shadow) var(--secondary-color);
+        box-shadow: var(--box-shadow) var(--tertiary-color);
     }
-
-
 
     /* footer style */
     footer {
@@ -273,8 +273,10 @@ blockquote {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 3rem;
-        background-color: grey;
+        background-color: var(--tertiary-color);
         padding: 2rem;
+        color: white;
+        margin: 2rem 0 0 0;
     }
 
     footer ul {

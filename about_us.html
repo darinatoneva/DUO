@@ -2,129 +2,146 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="ROBOTS" content="NOINDEX, FOLLOW">
-	<meta name="ROBOTS" content="INDEX, NOFOLLOW">
-	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
-	<title>Danmarks Underholdningsorkester</title>
-	<link rel="stylesheet" href="css_general/style_general.css">
-
-<!--
-	<link rel="stylesheet" href="css_desktop/style_desktop.css">
-	<link rel="stylesheet" href="css_mobile/style_mobile.css">
--->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_general/style_general.css">
+    <meta name="ROBOTS" content="NOINDEX, FOLLOW">
+    <meta name="ROBOTS" content="INDEX, NOFOLLOW">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <title>Danmarks Underholdningsorkester</title>
 </head>
 
+
 <body>
-	<div class="gridContainer">
-		<h1>ABOUT US</h1>
-		<header>
-			<!--LOGO-->
-			<img class="logo" src="res/image.png" alt="Logo Danmarks Underholdningsorkester">
-			<!--SoMe ICONS-->
-			<div class="SoMe_icons">
-				<img class="fb" src="res/fb.png" alt="Facebook icon">
-				<img class="insta" src="res/insta.png" alt="Instagram icon">
-				<img class="youtube" src="res/youtube.png" alt="Youtube icon">
-			</div>
-			<!--NAVIGATION-->
-			<nav>
-				<ul>
-					<li><a href="index.html">home</a></li>
-					<li><a href="about_us.html">about&nbsp;us</a></li>
-					<li><a href="news.html">news</a></li>
-					<li><a href="play.html">play</a></li>
-					<li><a href="teaching_material.html">teaching&nbsp;material</a></li>
-					<li><a href="contacts.html">contact</a></li>
-				</ul>
-			</nav>
-		</header>
-		<!--ABOUT US TEXT FIELD-->
-		<div class="aboutUsTextField">
-			<h1>About us</h1>
-			<p>Visionen er, at skabe musikalske oplevelser til hele landet – på tværs af både genrer og generationer. Danmarks Underholdningsorkester er landets første, større privatdrevne orkester, og vi ønsker at rykke grænserne for, hvad et klassisk orkester kan!Derfor udvikler vi konstant nye musikalske koncepter med interessante samarbejdspartnere.
+    <div class="gridContainer">
+        <header>
+            <!--SoMe icons-->
+            <!--
+            <div class="SoMe_icons">
+                <img class="fb" src="res/fb.png" alt="Facebook icon">
+                <img class="insta" src="res/insta.png" alt="Instagram icon">
+                <img class="youtube" src="res/youtube.png" alt="Youtube icon">
+            </div>
+-->
+            <nav class="navbar">
+                <div class="logo_container">
+                    <img class="logo" src="img/logo_face_and_text.svg" alt="duo logo">
+                </div>
+                <span class="open-slide">
+                    <a href="#" onclick="openSlideMenu()">
+                        <svg width="30" height="30">
+                            <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                            <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                            <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                        </svg>
+                    </a>
+                </span>
+                <ul class="navbar-nav">
+                    <li><a class="active" href="index.html">home</a></li>
+                    <li><a href="about_us.html">about&nbsp;us</a></li>
+                    <li><a href="news.html">news</a></li>
+                    <li><a href="play.html">play</a></li>
+                    <li><a href="teaching_material.html">teaching&nbsp;material</a></li>
+                    <li><a href="contacts.html">contact</a></li>
+                </ul>
+            </nav>
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a class="active" href="index.html">home</a>
+                <a href="about_us.html">about&nbsp;us</a>
+                <a href="news.html">news</a>
+                <a href="play.html">play</a>
+                <a href="teaching_material.html">teaching&nbsp;material</a>
+                <a href="contacts.html">contact</a>
+            </div>
+        </header>
 
-				Store populære koncerter med de bedste solister er en del af vores dna. Samtidig spiller vi klassiske koncerter på topniveau – både nationalt og internationalt – og er elsket for fortolkningerne af særligt det wienerklassiske repertoire med chefdirigent Adam Fischer i spidsen. Vi prioriterer formidling til børn og unge højt, og gør musikken tilgængelig via koncertformater der inddrager dem.</p>
-		</div>
-		<!--IMAGE-->
-		<img src="res/image.png" alt="">
-		<!--HISTORY DATES-->
-		<ul>
-			<li><b>1939</b>
-				Louis Preils ensemble tilknyttes
-				DR under navnet Radioensemblet</li>
-			<li><b>1939</b>
-				Louis Preils ensemble tilknyttes
-				DR under navnet Radioensemblet</li>
-			<li><b>1939</b>
-				Louis Preils ensemble tilknyttes
-				DR under navnet Radioensemblet</li>
-			<li><b>1939</b>
-				Louis Preils ensemble tilknyttes
-				DR under navnet Radioensemblet</li>
-			<li><b>1939</b>
-				Louis Preils ensemble tilknyttes
-				DR under navnet Radioensemblet</li>
-			<li><b>1939</b>
-				Louis Preils ensemble tilknyttes
-				DR under navnet Radioensemblet</li>
-			<li><b>1939</b>
-				Louis Preils ensemble tilknyttes
-				DR under navnet Radioensemblet</li>
-			<li><b>1939</b>
-				Louis Preils ensemble tilknyttes
-				DR under navnet Radioensemblet</li>
-			<li><b>1939</b>
-				Louis Preils ensemble tilknyttes
-				DR under navnet Radioensemblet</li>
-		</ul>
-	</div>
-	<!--FOOTER-->
-	<footer>
-		<ul class="footer_left">
-			<li><a href="about_us.html">ABOUT&nbsp;US</a></li>
-			<li><a href="">BUYING INSTRUMENTS</a></li>
-			<li><a href="">FAQ</a></li>
-			<li><a href="news.html">NEWS</a></li>
-			<li><a href="">EVENTS</a></li>
-			<li><a href="play.html">PLAY</a></li>
-			<li><a href="play.html">TANTE MUSIKA</a></li>
-		</ul>
+        <section class="main_content">
+            <!--ABOUT US TEXT FIELD-->
+            <div class="aboutUsTextField">
+                <h1>About us</h1>
+                <p>Visionen er, at skabe musikalske oplevelser til hele landet – på tværs af både genrer og generationer. Danmarks Underholdningsorkester er landets første, større privatdrevne orkester, og vi ønsker at rykke grænserne for, hvad et klassisk orkester kan!Derfor udvikler vi konstant nye musikalske koncepter med interessante samarbejdspartnere.
 
-		<ul class="footer_right">
+                    Store populære koncerter med de bedste solister er en del af vores dna. Samtidig spiller vi klassiske koncerter på topniveau – både nationalt og internationalt – og er elsket for fortolkningerne af særligt det wienerklassiske repertoire med chefdirigent Adam Fischer i spidsen. Vi prioriterer formidling til børn og unge højt, og gør musikken tilgængelig via koncertformater der inddrager dem.</p>
+            </div>
+            <!--IMAGE-->
+            <img src="res/image.png" alt="">
+            <!--HISTORY DATES-->
+            <ul>
+                <li><b>1939</b>
+                    Louis Preils ensemble tilknyttes
+                    DR under navnet Radioensemblet</li>
+                <li><b>1939</b>
+                    Louis Preils ensemble tilknyttes
+                    DR under navnet Radioensemblet</li>
+                <li><b>1939</b>
+                    Louis Preils ensemble tilknyttes
+                    DR under navnet Radioensemblet</li>
+                <li><b>1939</b>
+                    Louis Preils ensemble tilknyttes
+                    DR under navnet Radioensemblet</li>
+                <li><b>1939</b>
+                    Louis Preils ensemble tilknyttes
+                    DR under navnet Radioensemblet</li>
+                <li><b>1939</b>
+                    Louis Preils ensemble tilknyttes
+                    DR under navnet Radioensemblet</li>
+                <li><b>1939</b>
+                    Louis Preils ensemble tilknyttes
+                    DR under navnet Radioensemblet</li>
+                <li><b>1939</b>
+                    Louis Preils ensemble tilknyttes
+                    DR under navnet Radioensemblet</li>
+                <li><b>1939</b>
+                    Louis Preils ensemble tilknyttes
+                    DR under navnet Radioensemblet</li>
+            </ul>
+        </section>
+    </div>
 
-			<li><a href="about_us.html">MEET A MUSICIAN</a></li>
-			<li><a href="">AUDIO CLIPS OF INSTRUMENTS</a></li>
-			<li><a href="teaching_material.html">TEACHING MATERIAL</a></li>
-			<li><a href="news.html">INSPIRATION</a></li>
-			<li><a href="">CHECKLIST</a></li>
-			<li><a href="play.html">WORKSHOP VIDEOS</a></li>
-		</ul>
-		<div>
-			<h5>ADRESSE</h5>
-			<p>Danmarks Underholdningsorkester
-				Lydens Hus
-				Gammel Kongevej 11. 4.
-				København V.
-				CVR-NR: 36539712</p>
-		</div>
-		<div>
-			<h5>KONTAKT</h5>
-			<p>Spørgsmål vedr. billetter osv.
-				info@underholdningsorkester.dk
+    <!--FOOTER-->
+    <footer>
+        <ul class="footer_left">
+            <li><a href="about_us.html">ABOUT&nbsp;US</a></li>
+            <li><a href="">BUYING INSTRUMENTS</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="">EVENTS</a></li>
+            <li><a href="play.html">PLAY</a></li>
+            <li><a href="play.html">TANTE MUSIKA</a></li>
+        </ul>
 
-				Venneforening
-				venneforening@underholdningsorkester.dk</p>
-		</div>
-		<div>
-			<h5>TILMELD NYHEDSBREV</h5>
-			<p>Få seneste nyt fra Danmarks Underholdningsorkester, direkte i din indbakke.</p>
-			<button class="button_sign_up"><a href="">SIGN UP</a></button>
-		</div>
-	</footer>
-	<script src="js/script.js"></script>
+        <ul class="footer_right">
+
+            <li><a href="about_us.html">MEET A MUSICIAN</a></li>
+            <li><a href="">AUDIO CLIPS OF INSTRUMENTS</a></li>
+            <li><a href="teaching_material.html">TEACHING MATERIAL</a></li>
+            <li><a href="news.html">INSPIRATION</a></li>
+            <li><a href="">CHECKLIST</a></li>
+            <li><a href="play.html">WORKSHOP VIDEOS</a></li>
+        </ul>
+        <div>
+            <h5>ADRESSE</h5>
+            <p>Danmarks Underholdningsorkester
+                Lydens Hus
+                Gammel Kongevej 11. 4.
+                København V.
+                CVR-NR: 36539712</p>
+        </div>
+        <div>
+            <h5>KONTAKT</h5>
+            <p>Spørgsmål vedr. billetter osv.
+                info@underholdningsorkester.dk
+                Venneforening
+                venneforening@underholdningsorkester.dk</p>
+        </div>
+        <div>
+            <h5>TILMELD NYHEDSBREV</h5>
+            <p>Få seneste nyt fra Danmarks Underholdningsorkester, direkte i din indbakke.</p>
+            <button class="button_sign_up"><a href="">SIGN UP</a></button>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -15,6 +15,9 @@
     --filter-green: invert(48%) sepia(79%) saturate(2476%) hue-rotate(6deg) brightness(218%) contrast(119%);
     --img-gradient: linear-gradient(rgba(255, 254, 244, 0.1), rgba(10, 239, 206, 0.8));
     --img-gradient-2: linear-gradient(rgba(255, 254, 244, 0.1), rgba(255, 111, 120, 0.8));
+    --secondary-animation: fadein 2s ease-in-out 0.2s 1 normal forwards;
+    --tertiary-animation: moveVector 5s ease-in-out 0.2s 1 normal forwards;
+    --fourth-animation: moveVectorToo 5s ease-in-out 0.2s 1 normal forwards;
 }
 
 /* General styling */
@@ -79,6 +82,52 @@ a {
     text-decoration: line-through;
 }
 
+/* animation */
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+         transform: rotate(-3deg);
+    }
+}
+
+@keyframes moveVector {
+    0% {
+        transform: translateX(-20%);
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        transform: translateY(0%);
+        transform: rotate(12deg);
+        opacity: 1;
+    }
+}
+
+@keyframes moveVectorToo {
+    0% {
+        transform: translateX(20%);
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        transform: translateY(-50%);
+        transform: rotate(-12deg);
+        opacity: 1;
+    }
+}
+
+
+
 /* navigation styling*/
 .navbar {
     display: flex;
@@ -115,11 +164,11 @@ a {
 }
 
 .navbar a:hover {
-    color: red;
+    color: white;
 }
 
 .navbar a:active {
-    color: red;
+    color: var(--primary-color);
 }
 
 .open-slide {
@@ -229,6 +278,7 @@ a {
         padding: 2rem;
         transform: rotate(-2deg);
         box-shadow: var(--box-shadow) var(--tertiary-color);
+        animation: var(--secondary-animation);
     }
 
     .all_musicians {
@@ -252,6 +302,7 @@ a {
         width: 40%;
         z-index: -1;
         filter: var(--filter-green);
+        animation: var(--tertiary-animation);
     }
 
     .vector_triangle {
@@ -261,6 +312,7 @@ a {
         width: 40%;
         z-index: -2;
         filter: var(--filter-green);
+        animation: var(--fourth-animation);
     }
 
     .discover {

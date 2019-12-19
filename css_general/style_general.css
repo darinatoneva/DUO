@@ -412,13 +412,17 @@ a {
 
     .testimonial {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         padding: 2rem;
     }
 
     .testimonial div {
-        grid-column: 1;
+        grid-column: 2;
         margin: auto;
+    }
+
+    .testimonial blockquote {
+        grid-column: 3/5;
     }
 
     .gallery {
@@ -516,7 +520,7 @@ a {
         margin: 1rem 0 0 0;
     }
 
-    .workshop_videos .video {
+    .workshop_videos img {
         width: 100%;
         height: auto;
     }
@@ -558,13 +562,18 @@ a {
         margin: 2rem 0 0 0;
     }
 
+    .inspiration img {
+        width: 100%;
+        height: auto;
+    }
+
     .inspiration h2 {
         grid-column: 1/-1;
         text-align: center;
     }
 
     .checklist {
-         display: grid;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1rem;
         margin: 2rem 0 0 0;
@@ -590,6 +599,10 @@ a {
         background: white;
         padding: 1rem;
         box-shadow: var(--box-shadow) var(--tertiary-color);
+    }
+
+    .sub_page_grid .singleNews {
+        grid-column: 1/11;
     }
 
     /* footer style */
@@ -691,7 +704,7 @@ a {
         grid-column: 1;
     }
 
-       .time_category {
+    .time_category {
         display: flex;
         justify-content: space-between;
     }

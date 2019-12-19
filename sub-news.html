@@ -5,6 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css_general/style_general.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <meta name="ROBOTS" content="NOINDEX, FOLLOW">
     <meta name="ROBOTS" content="INDEX, NOFOLLOW">
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
@@ -17,9 +26,9 @@
             <!--SoMe icons-->
 
             <div class="SoMe_icons">
-                <img class="fb" src="res/fb.png" alt="Facebook icon">
-                <img class="insta" src="res/insta.png" alt="Instagram icon">
-                <img class="youtube" src="res/youtube.png" alt="Youtube icon">
+                <a href="https://www.facebook.com/Underholdningsorkester"><img class="fb" src="res/fb.png" alt="Facebook icon"></a>
+                <a href="https://www.instagram.com/dkunderholdningsorkester"><img class="insta" src="res/insta.png" alt="Instagram icon"></a>
+                <a href="https://www.youtube.com/channel/UC8xRaNqgf09DaqEKZlNdoxQ/videos"><img class="youtube" src="res/youtube.png" alt="Youtube icon"></a>
             </div>
 
             <nav class="navbar">
@@ -57,27 +66,23 @@
 
         <section class="main_content">
             <h1 class="straight_h1">NEWS</h1>
-            <!-- template from database -->
-            <section id="events">
-                <template class="newsTemplate">
-                    <article class="singleNews">
-                        <header>
-                            <div class="time_category">
-                                <div class="date-time">DATE</div>
-                                <div class="event-category">CATEGORY</div>
-                            </div>
-                            <hr>
-                            <div class="img_gradient">
-                                <img src="" alt="" class="cover">
-                            </div>
-                            <a href="#">
-                                <h1>TITLE</h1>
-                            </a>
-                        </header>
-                        <section id="body-copy">BODY CONTENT</section>
-                    </article>
-                </template>
-            </section>
+            <div class="sub_page_grid">
+                <!-- template from database -->
+                <section id="events">
+                    <template class="newsTemplate">
+                        <article class="singleNews">
+                            <header>
+                                <a href="#">
+                                    <div class="date-time">DATE</div>
+                                    <div class="event-category">CATEGORY</div>
+                                    <h1>TITLE</h1>
+                                </a>
+                            </header>
+                            <section id="body-copy">BODY CONTENT</section>
+                        </article>
+                    </template>
+                </section>
+            </div>
         </section>
     </div>
 

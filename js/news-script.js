@@ -15,13 +15,13 @@ function init() {
 }
 
 function getAllCategories() {
-	fetch("http://lovethatwillnotdie.com/wp_duo/wp-json/wp/v2/categories?_embed")
+	fetch("https://lovethatwillnotdie.com/wp_duo/wp-json/wp/v2/categories?_embed")
 		.then(res => res.json())
 		.then(handleCategories);
 }
 
 function getSingleEvent() {
-	fetch("http://lovethatwillnotdie.com/wp_duo/wp-json/wp/v2/posts/" + id + "?_embed")
+	fetch("https://lovethatwillnotdie.com/wp_duo/wp-json/wp/v2/posts/" + id + "?_embed")
 		.then(res => res.json())
 		.then(handleSingleEvent);
 }
@@ -37,7 +37,7 @@ function handleSingleEvent(event) {
 	const dateTime = eventCopy.querySelector(".date-time");
 	dateTime.textContent = event.date.substring(0, 10);
 
-	const categoryField = eventCopy.querySelector("h2");
+	const categoryField = eventCopy.querySelector(".event-category");
 	categoryField.textContent = categories[event.categories[0]];
 
 	const content = eventCopy.querySelector("section");
@@ -54,7 +54,7 @@ function saveCategoriesInArray(data) {
 }
 
 function getCategoryData() {
-	fetch("http://lovethatwillnotdie.com/wp_duo/wp-json/wp/v2/posts?_embed")
+	fetch("https://lovethatwillnotdie.com/wp_duo/wp-json/wp/v2/posts?_embed")
 		.then(res => res.json())
 		.then(handleData);
 }
@@ -71,16 +71,15 @@ function showEvent(event) {
 	const h1 = eventCopy.querySelector("h1");
 	h1.textContent = event.title.rendered;
 
-
 	const dateTime = eventCopy.querySelector(".date-time");
 	dateTime.textContent = event.date.substring(0, 10);
 
-	const categoryField = eventCopy.querySelector("h2");
+	const categoryField = eventCopy.querySelector(".event-category");
 	categoryField.textContent = categories[event.categories[0]];
 
 	var imgNode = event._embedded["wp:featuredmedia"];
 	imgPath = imgPath ? imgPath : defaultPicUrl;
-	var imgPath = imgNode ? imgNode[0].media_details.sizes.medium.source_url : defaultPicUrl;
+	var imgPath = imgNode ? imgNode[0].media_details.sizes.medium_large.source_url : defaultPicUrl;
 	//imgNode[0].media_details.sizes.medium_large.source_url : defaultPicUrl;
 	console.log(imgPath);
 	const img = eventCopy.querySelector("img.cover");

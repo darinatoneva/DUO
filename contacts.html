@@ -2,108 +2,181 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="ROBOTS" content="NOINDEX, FOLLOW">
-	<meta name="ROBOTS" content="INDEX, NOFOLLOW">
-	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
-	<title>Danmarks Underholdningsorkester</title>
-	<link rel="stylesheet" href="css_desktop/style_desktop.css">
-	<link rel="stylesheet" href="css_mobile/style_mobile.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_general/style_general.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="ROBOTS" content="NOINDEX, FOLLOW">
+    <meta name="ROBOTS" content="INDEX, NOFOLLOW">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <title>Danmarks Underholdningsorkester</title>
 </head>
 
 <body>
-	<div class="gridContainer">
+    <div class="gridContainer">
+        <header>
+            <!--SoMe icons-->
 
-		<header>
-			<img class="logo" src="res/image.png" alt="Logo Danmarks Underholdningsorkester">
+            <div class="SoMe_icons">
+                <a href="https://www.facebook.com/Underholdningsorkester"><img class="fb" src="res/fb.png" alt="Facebook icon"></a>
+                <a href="https://www.instagram.com/dkunderholdningsorkester"><img class="insta" src="res/insta.png" alt="Instagram icon"></a>
+                <a href="https://www.youtube.com/channel/UC8xRaNqgf09DaqEKZlNdoxQ/videos"><img class="youtube" src="res/youtube.png" alt="Youtube icon"></a>
+            </div>
 
-			<div class="SoMe_icons">
-				<img class="fb" src="res/fb.png" alt="Facebook icon">
-				<img class="insta" src="res/insta.png" alt="Instagram icon">
-				<img class="youtube" src="res/youtube.png" alt="Youtube icon">
-			</div>
-			<nav>
-				<ul>
-					<li><a href="index.html">home</a></li>
-					<li><a href="about_us.html">about&nbsp;us</a></li>
-					<li><a href="news.html">news</a></li>
-					<li><a href="play.html">play</a></li>
-					<li><a href="teaching_material.html">teaching&nbsp;material</a></li>
-					<li><a href="contacts.html">contact</a></li>
-				</ul>
-			</nav>
-		</header>
-		<h1>CONTACT US</h1>
-		<div class="contact_group">
-			<h3>Danmarks Underholdningsorkester</h3>
-			<p>Generelle henvendelser:
-				info@underholdningsorkester.dk
-				<br>
-				<br>
-				Lydens Hus
-				Gammel Kongevej 11, 4. sal
-				1610 København V
-				CVR: 36539712
-			</p>
-		</div>
-		<div class="contact_group">
-			<h3>Direktør</h3>
-			<p>Andreas Vetö
-				<br>
-				<br>
-				Tlf. +45 61414620
-				<br>
-				Mail: av@underholdningsorkester.dk
-			</p>
-			<h3>Producent</h3>
-			<p>
-				Anne Dueholm Jacobsen
-				<br>
-				<br>
-				Tlf. +45 60718850
-				<br>
-				Mail: aj@underholdningsorkester.dk
-			</p>
-		</div>
-		<div class="contact_group">
-			<h3>Programchef</h3>
-			<p>
-				John Frandsen
-				<br>
-				<br>
-				Tlf. +45 26876226
-				<br>
-				Mail: jf@underholdningsorkester.dk
-			</p>
-			<h3>Kommunikation og PR</h3>
-			<p>
-				Kristina Sindberg
-				<br>
-				<br>
-				Tlf. +45 24860184
-				<br>
-				Mail: kristina@have.dk
-			</p>
-		</div>
-		<div class="contact_group">
-			<h3>Formand, Foreningen Danmarks Underholdningsorkester
-			</h3>
-			<p>
-				Mette Bugge Madsen
-				<br>
-				<br>
-				Tlf. +45 24240559
-				<br>
-				Mail: mbm@underholdningsorkester.dk
-			</p>
+            <nav class="navbar">
+                <div class="logo_container">
+                    <img class="logo" src="img/logo_face_and_text.svg" alt="duo logo">
+                </div>
+                <span class="open-slide">
+                    <a href="#" onclick="openSlideMenu()">
+                        <svg width="30" height="30">
+                            <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                            <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                            <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                        </svg>
+                    </a>
+                </span>
+                <ul class="navbar-nav">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about_us.html">about&nbsp;us</a></li>
+                    <li><a href="news.html">news</a></li>
+                    <li><a href="play.html">play</a></li>
+                    <li><a href="teaching_material.html">teaching&nbsp;material</a></li>
+                    <li><a class="active" href="contacts.html">contact</a></li>
+                </ul>
+            </nav>
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a href="index.html">home</a>
+                <a href="about_us.html">about&nbsp;us</a>
+                <a href="news.html">news</a>
+                <a href="play.html">play</a>
+                <a href="teaching_material.html">teaching&nbsp;material</a>
+                <a class="active" href="contacts.html">contact</a>
+            </div>
+        </header>
 
-		</div>
+        <img class="vector_note" src="img/vector_clef.svg" alt="Note">
+        <img class="vector_triangle" src="img/vector_triangle_no_fill.svg" alt="Triangle">
 
-	</div>
+        <section class="main_content">
+            <h1 class="straight_h1">Contact</h1>
+            <section class="contact_section">
+                <div class="contact_group">
+                    <h3>Danmarks Underholdningsorkester</h3>
+                    <p>Generelle henvendelser:
+                        info@underholdningsorkester.dk
+                        <br>
+                        Lydens Hus
+                        Gammel Kongevej 11, 4. sal
+                        1610 København V
+                        CVR: 36539712
+                    </p>
+                </div>
+                <div class="contact_group">
+                    <h3>Direktør</h3>
+                    <p>Andreas Vetö
+                        <br>
+                        Tlf. +45 61414620
+                        <br>
+                        Mail: av@underholdningsorkester.dk
+                    </p>
+                </div>
+                <div class="contact_group">
+                    <h3>Producent</h3>
+                    <p>
+                        Anne Dueholm Jacobsen
+                        <br>
+                        Tlf. +45 60718850
+                        <br>
+                        Mail: aj@underholdningsorkester.dk
+                    </p>
+                </div>
+                <div class="contact_group">
+                    <h3>Programchef</h3>
+                    <p>
+                        John Frandsen
+                        <br>
+                        Tlf. +45 26876226
+                        <br>
+                        Mail: jf@underholdningsorkester.dk
+                    </p>
+                </div>
+                <div class="contact_group">
+                    <h3>Kommunikation og PR</h3>
+                    <p>
+                        Kristina Sindberg
+                        <br>
+                        Tlf. +45 24860184
+                        <br>
+                        Mail: kristina@have.dk
+                    </p>
+                </div>
+                <div class="contact_group">
+                    <h3>Formand, Foreningen Danmarks Underholdningsorkester
+                    </h3>
+                    <p>
+                        Mette Bugge Madsen
+                        <br>
+                        Tlf. +45 24240559
+                        <br>
+                        Mail: mbm@underholdningsorkester.dk
+                    </p>
+                </div>
+            </section>
+        </section>
+    </div>
 
-	<script src="js/script.js"></script>
+    <!--FOOTER-->
+    <footer>
+        <ul class="footer_left">
+            <li><a href="about_us.html">ABOUT&nbsp;US</a></li>
+            <li><a href="">BUYING INSTRUMENTS</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="">EVENTS</a></li>
+            <li><a href="play.html">PLAY</a></li>
+            <li><a href="play.html">TANTE MUSIKA</a></li>
+        </ul>
+        <ul class="footer_right">
+            <li><a href="about_us.html">MEET A MUSICIAN</a></li>
+            <li><a href="">AUDIO CLIPS OF INSTRUMENTS</a></li>
+            <li><a href="teaching_material.html">TEACHING MATERIAL</a></li>
+            <li><a href="news.html">INSPIRATION</a></li>
+            <li><a href="">CHECKLIST</a></li>
+            <li><a href="play.html">WORKSHOP VIDEOS</a></li>
+        </ul>
+        <div>
+            <h4>ADRESSE</h4>
+            <p>Danmarks Underholdningsorkester
+                Lydens Hus
+                Gammel Kongevej 11. 4.
+                København V.
+                CVR-NR: 36539712</p>
+        </div>
+        <div>
+            <h4>KONTAKT</h4>
+            <p>Spørgsmål vedr. billetter osv.
+                info@underholdningsorkester.dk
+                Venneforening
+                venneforening@underholdningsorkester.dk</p>
+        </div>
+        <div>
+            <h4>TILMELD NYHEDSBREV</h4>
+            <p>Få seneste nyt fra Danmarks Underholdningsorkester, direkte i din indbakke.</p>
+            <button class="button_sign_up"><a href="">SIGN UP</a></button>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

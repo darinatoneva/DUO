@@ -1,7 +1,7 @@
 // Mobile navigation
 function openSlideMenu() {
-    document.getElementById('side-menu').style.width = '250px';
-    document.getElementById('main_content').style.marginLeft = '250px';
+    document.getElementById('side-menu').style.width = '65vw';
+    document.getElementById('main_content').style.marginLeft = '65vw';
 }
 
 function closeSlideMenu() {
@@ -10,12 +10,11 @@ function closeSlideMenu() {
 }
 
 //GAME
-
 var drum_sounds = new Array();
 var key_is_up = true;
 var i = 1;
 for (i = 1; i < 10; i++) {
-    drum_sounds[i] = new Audio("sounds/" + i + ".wav");
+    drum_sounds[i] = new Audio("sounds/" + i + ".mp3");
 }
 
 var drum_buttons = document.querySelectorAll(".drum_button");
@@ -51,7 +50,6 @@ document.addEventListener("keydown", function (event) {
         offset = 48;
     }
 
-
     if (offset > 0 && key_is_up) {
         var button_number = event.keyCode - offset;
         var selector = "#d" + button_number;
@@ -76,27 +74,4 @@ function clean_button_pressed_effect() {
         drum_buttons[i].classList.remove("pressed_buton");
         drum_buttons[i].blur();
     }
-}
-
-//SLIDER
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = x.length
-    }
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    x[slideIndex - 1].style.display = "block";
 }

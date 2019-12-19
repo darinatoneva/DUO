@@ -4,12 +4,23 @@
 /* Setup variables */
 :root {
     --bg-color: white;
-    --primary-color: red;
+    --primary-color: #ff6f78;
     --secondary-color: black;
-    --tertiary-color: #eee;
+    --tertiary-color: #001174;
+    --link-color: #ff6f78;
     --primary-font: 'Montserrat', sans-serif;
     --secondary-font: 'Lilita One', cursive;
     --line-height: 1.5rem;
+    --box-shadow: 10px 10px 0px -1px;
+    --filter-green: invert(48%) sepia(69%) saturate(126%) hue-rotate(6deg) brightness(128%) contrast(219%);
+    --img-gradient: linear-gradient(rgba(255, 254, 244, 0.1), rgba(10, 239, 206, 0.8));
+    --img-gradient-2: linear-gradient(rgba(255, 254, 244, 0.1), rgba(255, 111, 120, 0.8));
+    --secondary-animation: fadein 2s ease-in-out 0.2s 1 normal forwards;
+    --tertiary-animation: moveVector 5s ease-in-out 0.2s 1 normal forwards;
+    --fourth-animation: moveVectorToo 5s ease-in-out 0.2s 1 normal forwards;
+    --icon-pop-animation: iconPop 2s ease-in-out 1 normal forwards;
+    --slide-in-animation: slideIn 2s ease-in-out 1 normal forwards;
+    --slide-animation-straight: slideInStraight 2s ease-in-out 1 normal forwards;
 }
 
 /* General styling */
@@ -26,13 +37,146 @@ body {
     margin: 0 auto;
     font-family: var(--primary-font);
     line-height: var(--line-height);
-background: linear-gradient(rgba(0, 255, 0, 0.6), rgba(0, 0, 255, 0.5)), url(img/img_hjemme_projektet_1920x1284.jpg) center;
+    background: linear-gradient(rgba(0, 255, 0, 0.6), rgba(0, 0, 255, 0.5)), url(img/img_hjemme_projektet_1920x1284.jpg) center;
+}
+
+.body_play {
+    background: linear-gradient(rgba(255, 0, 0, 0.6), rgba(0, 0, 255, 0.5));
+}
+
+h1 {
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    color: white;
+    margin: 2rem 0 0 0;
+    animation: var(--slide-in-animation);
 }
 
 h2 {
-    line-height: 2rem;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+h3 {
     padding: 0 0 1.5rem 0;
     font-family: var(--secondary-font);
+    letter-spacing: 0.1rem;
+}
+
+h4 {
+    font-family: var(--secondary-font);
+    letter-spacing: 0.1rem;
+    color: white;
+}
+
+h5 {
+    font-family: var(--secondary-font);
+    letter-spacing: 0.1rem;
+    color: white;
+}
+
+blockquote {
+    font-style: oblique;
+    text-align: center;
+}
+
+.tante_quote {
+    font-style: oblique;
+    text-align: left;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.active {
+    color: yellow;
+}
+
+/* animation */
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+        transform: rotate(-3deg);
+    }
+}
+
+@keyframes moveVector {
+    0% {
+        transform: translateX(-20%);
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        transform: translateY(0%);
+        transform: rotate(12deg);
+        opacity: 1;
+    }
+}
+
+@keyframes moveVectorToo {
+    0% {
+        transform: translateX(40%);
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        transform: translateY(-50%);
+        transform: rotate(-12deg);
+        opacity: 1;
+    }
+}
+
+@keyframes iconPop {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-15%);
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        transform: rotate(-3deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInStraight {
+    0% {
+        transform: translateX(-15%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 
 /* navigation styling*/
@@ -45,13 +189,9 @@ h2 {
     height: 100px;
 }
 
-.logo_container {
-    display: flex;
-    align-items: center;
-}
-
 .logo {
-    width: 200px;
+    width: 100%;
+    margin: 2rem;
 }
 
 .navbar-nav {
@@ -63,8 +203,7 @@ h2 {
     width: 100%;
     margin: 0 2rem;
     padding: 0.1rem;
-    text-decoration: none;
-    color: white;
+    color: var(--tertiary-color);
 }
 
 .navbar ul {
@@ -73,19 +212,17 @@ h2 {
 }
 
 .navbar a:hover {
-    color: red;
+    color: white;
 }
 
 .navbar a:active {
-    color: red;
+    color: var(--primary-color);
 }
 
 .open-slide {
     position: absolute;
     top: 35px;
     right: 5px;
-    display: none;
-    display: none;
 }
 
 .side-nav {
@@ -103,9 +240,8 @@ h2 {
 
 .side-nav a {
     font-family: var(--primary-font);
-    color: var(--secondary-color);
+    color: var(--link-color);
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
     padding: 10px 10px 10px 30px;
     text-decoration: none;
     font-size: 20px;
@@ -114,22 +250,17 @@ h2 {
 }
 
 .side-nav a:hover {
-    color: red;
+    color: white;
 }
 
 .side-nav .btn-close {
     position: absolute;
-    color: black;
-    top: 10px;
-    right: 55px;
+    color: white;
+    top: 30px;
+    right: 25px;
     font-size: 56px;
     margin-left: 50px;
 }
-
-
-
-
-
 
 @media only screen and (min-width: 800px) {
     .gridContainer {
@@ -139,12 +270,66 @@ h2 {
         grid-column-gap: 30px;
     }
 
+    .SoMe_icons {
+        display: flex;
+        justify-content: flex-end;
+        padding: 2rem 1.4rem 0 0;
+    }
+
+    .SoMe_icons img {
+        padding: 0 0.6rem 0 0;
+        width: 40px;
+    }
+
+    .open-slide {
+        display: none;
+    }
+
     header {
         grid-column: 1/-1;
     }
 
     .main_content {
         grid-column: 2/12;
+    }
+
+    #events {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+        margin: 2rem 0 0 0;
+    }
+
+    #events h1 {
+        grid-column: 1/-1;
+        font-size: 1rem;
+        color: var(--link-color);
+        margin: auto;
+        animation: none;
+    }
+
+    .straight_h1 {
+        animation: var(--slide-animation-straight);
+    }
+
+    .time_category {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    hr {
+        border: 1px solid var(--tertiary-color);
+        margin: 0.4rem 0 0.6rem 0;
+    }
+
+    .singleNews {
+        background: white;
+        padding: 1.5rem;
+    }
+
+    .singleNews img {
+        width: 100%;
+        height: auto;
     }
 
     .short_about_us {
@@ -158,22 +343,42 @@ h2 {
         background: white;
         padding: 2rem;
         transform: rotate(-2deg);
-        box-shadow: 10px 10px 0px -1px var(--secondary-color);
+        box-shadow: var(--box-shadow) var(--tertiary-color);
+        animation: var(--secondary-animation);
     }
 
-    /* footer stlye */
-    footer {
-        grid-column: 1/-1;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 3rem;
-        background-color: grey;
-        padding: 2rem;
+    .all_musicians {
+        width: 100%;
+        height: auto;
     }
 
-    footer ul {
-        list-style: none;
-        text-decoration: none;
+    .icons_homePage {
+        filter: drop-shadow(10px 10px 0px var(--tertiary-color));
+        animation: var(--icon-pop-animation);
+    }
+
+    .tante_shouting {
+        width: 100%;
+        filter: drop-shadow(10px 10px 0px var(--tertiary-color));
+    }
+
+    .vector_note {
+        position: absolute;
+        right: 100px;
+        width: 40%;
+        z-index: -1;
+        filter: var(--filter-green);
+        animation: var(--tertiary-animation);
+    }
+
+    .vector_triangle {
+        position: absolute;
+        right: 60vw;
+        top: 70vh;
+        width: 40%;
+        z-index: -2;
+        filter: var(--filter-green);
+        animation: var(--fourth-animation);
     }
 
     .discover {
@@ -187,30 +392,32 @@ h2 {
         padding: 2rem;
     }
 
+    .discover h3 {
+        padding: 1rem;
+    }
+
     .discover_bits {
         grid-column: 1/-1;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin: 0 auto;
-        grid-gap: 8rem;
-        padding: 0 0 2rem 0;
+        grid-gap: 6rem;
         text-align: center;
     }
 
     .testimonial {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         padding: 2rem;
     }
 
-    blockquote {
-        font-style: oblique;
-        text-align: center;
+    .testimonial div {
+        grid-column: 2;
+        margin: auto;
     }
 
-    .testimonial div {
-        grid-column: 1;
-        margin: auto;
+    .testimonial blockquote {
+        grid-column: 3/5;
     }
 
     .gallery {
@@ -225,6 +432,183 @@ h2 {
     .gallery_background {
         grid-column: 1;
         margin: auto;
+    }
+
+    .musicians_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+    .musician_img1 {
+        width: 100%;
+    }
+
+    .musician_img2 {
+        width: 100%;
+    }
+
+    .musician_img3 {
+        width: 100%;
+    }
+
+    .musicians_section h2 {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    .playSound_game {
+        margin: 0 auto;
+        grid-row: 3;
+        grid-column: 1/-1;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .playSound_game h2 {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    #frame {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+    .one_instrument {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .drum_button {
+        border: 0px;
+        padding: 0.6rem;
+        border-radius: 2rem;
+        width: 100%;
+        margin: 0.5rem;
+        box-shadow: var(--box-shadow) var(--tertiary-color);
+    }
+
+    .workshop_videos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem 2rem;
+        margin: 2rem 0 0 0;
+    }
+
+    .workshop_videos h2 {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    .workshop_video_1 {
+        width: 100%;
+        height: 200px;
+        background: var(--img-gradient), url(../img/workshop_video_1.jpg) top;
+        margin: 1rem 0 0 0;
+    }
+
+    .workshop_videos img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sample_presentations {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5rem;
+        margin: 2rem 0 0 0;
+    }
+
+    .sample_presentations h2 {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    .presentation_group {
+        text-align: center;
+    }
+
+    .presentation_group button {
+        border: 0px;
+        padding: 0.6rem;
+        border-radius: 2rem;
+        width: 100%;
+        margin: 0.5rem;
+        box-shadow: var(--box-shadow) var(--tertiary-color);
+    }
+
+    .icons_presentation {
+        width: 150px;
+        filter: drop-shadow(10px 10px 0px var(--tertiary-color));
+    }
+
+    .inspiration {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        margin: 2rem 0 0 0;
+    }
+
+    .inspiration img {
+        width: 100%;
+        height: auto;
+    }
+
+    .inspiration h2 {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    .checklist {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        margin: 2rem 0 0 0;
+    }
+
+    .checklist h2 {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    .checklist_group {
+        text-align: center;
+    }
+
+    .contact_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3rem;
+        margin: 2rem;
+    }
+
+    .contact_group {
+        background: white;
+        padding: 1rem;
+        box-shadow: var(--box-shadow) var(--tertiary-color);
+    }
+
+    .sub_page_grid .singleNews {
+        grid-column: 1/11;
+    }
+
+    /* footer style */
+    footer {
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 3rem;
+        background-color: var(--tertiary-color);
+        padding: 2rem;
+        color: white;
+        margin: 2rem 0 0 0;
+    }
+
+    footer ul {
+        list-style: none;
+        text-decoration: none;
     }
 
     /*SLIDER*/
@@ -260,5 +644,130 @@ h2 {
         color: black;
         margin-left: 10px;
         margin-right: 10px;
+    }
+}
+
+/*media query - mobile styling*/
+@media (max-width: 800px) {
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .main_content {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 3rem 0 3rem;
+        max-width: 100%;
+    }
+
+    .video {
+        width: 100%;
+        height: 250px;
+    }
+
+    .short_about_us {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+
+    .short_about_us_text_field {
+        background: white;
+        padding: 2rem;
+    }
+
+    #events {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+
+    .singleNews img {
+        max-width: 100%;
+    }
+
+    #events h2 {
+        grid-column: 1;
+    }
+
+    .time_category {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    hr {
+        border: 1px solid var(--tertiary-color);
+        margin: 0.4rem 0 0.6rem 0;
+    }
+
+    .singleNews {
+        background: white;
+        padding: 1.5rem;
+    }
+
+    .singleNews img {
+        width: 100%;
+        height: auto;
+    }
+
+    .tante_shouting {
+        width: 100%;
+    }
+
+    .musicians_section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        max-width: 100%;
+    }
+
+    .musician_img1 {
+        width: 100%;
+        height: 300px;
+        background: var(--img-gradient), url(../img/musician_helen_cello.jpg) top;
+        margin: 1rem 0 0 0;
+    }
+
+    .musician_img2 {
+        width: 100%;
+        height: 300px;
+        background: var(--img-gradient), url(../img/musician_radi_oboe.jpg) top;
+        margin: 1rem 0 0 0;
+    }
+
+    .musician_img3 {
+        width: 100%;
+        height: 300px;
+        background: var(--img-gradient), url(../img/musician_madara_violin.jpg) top;
+        margin: 1rem 0 0 0;
+    }
+
+    .musicians_section h2 {
+        grid-column: 1;
+        text-align: center;
+    }
+
+    article {
+        max-width: 100%;
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    .logo_container {
+        display: none;
+    }
+
+    .vector_note,
+    .vector_triangle {
+        display: none;
+    }
+
+    footer {
+        display: none;
     }
 }

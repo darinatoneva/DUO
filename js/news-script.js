@@ -15,13 +15,13 @@ function init() {
 }
 
 function getAllCategories() {
-	fetch("http://lovethatwillnotdie.com/wp_duo/wp-json/wp/v2/categories?_embed")
+	fetch("https://lovethatwillnotdie.com/wp_duo/wp-json/wp/v2/categories?_embed")
 		.then(res => res.json())
 		.then(handleCategories);
 }
 
 function getSingleEvent() {
-	fetch("http://lovethatwillnotdie.com/wp_duo/wp-json/wp/v2/posts/" + id + "?_embed")
+	fetch("https://lovethatwillnotdie.com/wp_duo/wp-json/wp/v2/posts/" + id + "?_embed")
 		.then(res => res.json())
 		.then(handleSingleEvent);
 }
@@ -54,7 +54,7 @@ function saveCategoriesInArray(data) {
 }
 
 function getCategoryData() {
-	fetch("http://lovethatwillnotdie.com/wp_duo/wp-json/wp/v2/posts?_embed")
+	fetch("https://lovethatwillnotdie.com/wp_duo/wp-json/wp/v2/posts?_embed")
 		.then(res => res.json())
 		.then(handleData);
 }
